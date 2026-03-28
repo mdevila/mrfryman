@@ -14,6 +14,7 @@ import {
   MessageCircle,
   Share2,
 } from "lucide-react";
+import { PageHeader } from "@/components/page-header";
 
 export default function ContactPage() {
   const [formData, setFormData] = useState({
@@ -32,21 +33,11 @@ export default function ContactPage() {
 
   return (
     <>
-      {/* Page Header */}
-      <div className="bg-[#8B6914] py-16 md:py-20">
-        <div className="container mx-auto px-4 text-center">
-          <span className="inline-block text-gold font-medium text-sm tracking-wider uppercase mb-2">
-            Get in Touch
-          </span>
-          <h1 className="text-4xl md:text-5xl font-bold font-heading text-white">
-            Contact Us
-          </h1>
-          <p className="text-white/70 mt-3 max-w-lg mx-auto">
-            Have questions about our menu or franchise packages? We&apos;d love to
-            hear from you!
-          </p>
-        </div>
-      </div>
+      <PageHeader
+        label="Get in Touch"
+        title="Contact Us"
+        description="Have questions about our menu or franchise packages? We'd love to hear from you!"
+      />
 
       <section className="py-16 md:py-20">
         <div className="container mx-auto px-4">

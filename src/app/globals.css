@@ -39,10 +39,11 @@
   --color-popover: var(--popover);
   --color-card-foreground: var(--card-foreground);
   --color-card: var(--card);
-  --color-brand: var(--brand);
-  --color-brand-foreground: var(--brand-foreground);
-  --color-brand-dark: var(--brand-dark);
-  --color-gold: var(--gold);
+  /* Brand colors — direct hex for reliable opacity modifiers */
+  --color-brand: #F5B820;
+  --color-brand-foreground: #3A2A0A;
+  --color-brand-dark: #8B6914;
+  --color-gold: #F5B820;
   --radius-sm: calc(var(--radius) * 0.6);
   --radius-md: calc(var(--radius) * 0.8);
   --radius-lg: var(--radius);
@@ -54,60 +55,54 @@
 
 :root {
   /* Golden yellow background tones */
-  --background: oklch(0.96 0.04 85);
-  --foreground: oklch(0.22 0.04 50);
+  --background: #F2E6C4;
+  --foreground: #3A2A0A;
 
   /* Cards: warm cream */
-  --card: oklch(0.99 0.015 85);
-  --card-foreground: oklch(0.22 0.04 50);
-  --popover: oklch(0.99 0.015 85);
-  --popover-foreground: oklch(0.22 0.04 50);
+  --card: #FDF6E3;
+  --card-foreground: #3A2A0A;
+  --popover: #FDF6E3;
+  --popover-foreground: #3A2A0A;
 
   /* Primary: golden yellow */
-  --primary: oklch(0.82 0.165 85);
-  --primary-foreground: oklch(0.2 0.04 50);
+  --primary: #F5B820;
+  --primary-foreground: #3A2A0A;
 
   /* Secondary: warm brown that blends with gold */
-  --secondary: oklch(0.42 0.09 55);
-  --secondary-foreground: oklch(0.97 0.01 85);
+  --secondary: #8B6914;
+  --secondary-foreground: #FDF6E3;
 
   /* Muted: soft warm beige */
-  --muted: oklch(0.93 0.03 85);
-  --muted-foreground: oklch(0.45 0.04 55);
+  --muted: #EAD9B0;
+  --muted-foreground: #7A6530;
 
   /* Accent: light golden */
-  --accent: oklch(0.90 0.06 85);
-  --accent-foreground: oklch(0.30 0.06 50);
+  --accent: #E8D49A;
+  --accent-foreground: #4A3A10;
 
-  --destructive: oklch(0.577 0.245 27.325);
-  --border: oklch(0.88 0.04 85);
-  --input: oklch(0.90 0.03 85);
-  --ring: oklch(0.82 0.165 85);
+  --destructive: #DC2626;
+  --border: #D9C68A;
+  --input: #E0D0A0;
+  --ring: #F5B820;
 
-  --chart-1: oklch(0.82 0.165 85);
-  --chart-2: oklch(0.42 0.09 55);
-  --chart-3: oklch(0.65 0.12 70);
-  --chart-4: oklch(0.55 0.10 45);
-  --chart-5: oklch(0.75 0.08 90);
+  --chart-1: #F5B820;
+  --chart-2: #8B6914;
+  --chart-3: #B8960B;
+  --chart-4: #A07010;
+  --chart-5: #D4A020;
 
   --radius: 0.75rem;
 
-  /* Brand colors */
-  --brand: oklch(0.82 0.165 85);
-  --brand-foreground: oklch(0.2 0.04 50);
-  --brand-dark: oklch(0.45 0.12 75);
-  --gold: oklch(0.82 0.165 85);
-
   --font-heading: 'Playfair Display', serif;
 
-  --sidebar: oklch(0.95 0.03 85);
-  --sidebar-foreground: oklch(0.22 0.04 50);
-  --sidebar-primary: oklch(0.82 0.165 85);
-  --sidebar-primary-foreground: oklch(0.2 0.04 50);
-  --sidebar-accent: oklch(0.90 0.05 85);
-  --sidebar-accent-foreground: oklch(0.30 0.06 50);
-  --sidebar-border: oklch(0.88 0.04 85);
-  --sidebar-ring: oklch(0.82 0.165 85);
+  --sidebar: #EDE0BE;
+  --sidebar-foreground: #3A2A0A;
+  --sidebar-primary: #F5B820;
+  --sidebar-primary-foreground: #3A2A0A;
+  --sidebar-accent: #E0D0A0;
+  --sidebar-accent-foreground: #4A3A10;
+  --sidebar-border: #D9C68A;
+  --sidebar-ring: #F5B820;
 }
 
 @layer base {
@@ -127,12 +122,12 @@
   width: 8px;
 }
 ::-webkit-scrollbar-track {
-  background: oklch(0.93 0.03 85);
+  background: #EAD9B0;
 }
 ::-webkit-scrollbar-thumb {
-  background: oklch(0.82 0.165 85 / 0.5);
+  background: rgba(245, 184, 32, 0.5);
   border-radius: 4px;
 }
 ::-webkit-scrollbar-thumb:hover {
-  background: oklch(0.82 0.165 85 / 0.7);
+  background: rgba(245, 184, 32, 0.7);
 }

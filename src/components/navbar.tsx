@@ -27,7 +27,7 @@ export function Navbar() {
   const [cartCount] = useState(0);
 
   return (
-    <header className="sticky top-0 z-50 w-full">
+    <header className="z-50 w-full">
       {/* Top bar — warm dark golden brown */}
       <div className="bg-[#8B6914] text-[#FFF8E7]">
         <div className="container mx-auto flex items-center justify-between px-4 py-1.5 text-xs sm:text-sm">
@@ -41,7 +41,7 @@ export function Navbar() {
       </div>
 
       {/* Main navbar */}
-      <nav className="bg-brand/95 backdrop-blur-md border-b border-brand/30 shadow-sm">
+      <nav className="bg-[#F5B820] backdrop-blur-md border-b border-[#8B6914]/30 shadow-sm">
         <div className="container mx-auto flex items-center justify-between px-4 py-3">
           {/* Logo */}
           <Link href="/" className="flex items-center group">

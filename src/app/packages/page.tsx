@@ -16,6 +16,7 @@ import {
   AccordionTrigger,
 } from "@/components/ui/accordion";
 import Link from "next/link";
+import { PageHeader } from "@/components/page-header";
 
 const faqs = [
   {
@@ -48,21 +49,11 @@ const faqs = [
 export default function PackagesPage() {
   return (
     <>
-      {/* Page Header */}
-      <div className="bg-[#8B6914] py-16 md:py-20">
-        <div className="container mx-auto px-4 text-center">
-          <span className="inline-block text-gold font-medium text-sm tracking-wider uppercase mb-2">
-            Ka Negosyo Partner Program
-          </span>
-          <h1 className="text-4xl md:text-5xl font-bold font-heading text-white">
-            Franchise Packages
-          </h1>
-          <p className="text-white/70 mt-3 max-w-lg mx-auto">
-            Start your own food business with Mr. Fryman&apos;s proven model. Choose
-            the package that fits your goals.
-          </p>
-        </div>
-      </div>
+      <PageHeader
+        label="Ka Negosyo Partner Program"
+        title="Franchise Packages"
+        description="Start your own food business with Mr. Fryman's proven model. Choose the package that fits your goals."
+      />
 
       {/* Packages */}
       <section className="py-16 md:py-20">

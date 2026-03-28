@@ -1,4 +1,5 @@
 import { Award, Users, MapPin, TrendingUp, Heart, Shield, Truck } from "lucide-react";
+import { PageHeader } from "@/components/page-header";
 import { TestimonialsSection } from "@/components/testimonials-section";
 import { CTASection } from "@/components/cta-section";
 
@@ -39,21 +40,11 @@ const values = [
 export default function AboutPage() {
   return (
     <>
-      {/* Page Header */}
-      <div className="bg-[#8B6914] py-16 md:py-20">
-        <div className="container mx-auto px-4 text-center">
-          <span className="inline-block text-gold font-medium text-sm tracking-wider uppercase mb-2">
-            Get to Know Us
-          </span>
-          <h1 className="text-4xl md:text-5xl font-bold font-heading text-white">
-            About Mr. Fryman
-          </h1>
-          <p className="text-white/70 mt-3 max-w-lg mx-auto">
-            From a humble food cart to a nationwide brand — our story of passion,
-            flavor, and Filipino entrepreneurship.
-          </p>
-        </div>
-      </div>
+      <PageHeader
+        label="Get to Know Us"
+        title="About Mr. Fryman"
+        description="From a humble food cart to a nationwide brand — our story of passion, flavor, and Filipino entrepreneurship."
+      />
 
       {/* Story */}
       <section className="py-16 md:py-20 bg-card">

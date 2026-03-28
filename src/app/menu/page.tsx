@@ -8,6 +8,7 @@ import { Button } from "@/components/ui/button";
 import { Badge } from "@/components/ui/badge";
 import { Input } from "@/components/ui/input";
 import { ShoppingCart, Star, Search, SlidersHorizontal } from "lucide-react";
+import { PageHeader } from "@/components/page-header";
 
 export default function MenuPage() {
   const [activeCategory, setActiveCategory] = useState("all");
@@ -25,21 +26,11 @@ export default function MenuPage() {
 
   return (
     <>
-      {/* Page Header */}
-      <div className="bg-[#8B6914] py-16 md:py-20">
-        <div className="container mx-auto px-4 text-center">
-          <span className="inline-block text-gold font-semibold text-base tracking-wider uppercase mb-2">
-            Explore Our Selection
-          </span>
-          <h1 className="text-5xl md:text-6xl font-bold font-heading text-white">
-            Our Menu
-          </h1>
-          <p className="text-white/70 mt-4 max-w-lg mx-auto text-lg">
-            Discover the best Filipino cuisine — from our signature crispy pata
-            to hearty family bundles.
-          </p>
-        </div>
-      </div>
+      <PageHeader
+        label="Explore Our Selection"
+        title="Our Menu"
+        description="Discover the best Filipino cuisine — from our signature crispy pata to hearty family bundles."
+      />
 
       <div className="container mx-auto px-4 py-12">
         {/* Filters */}
